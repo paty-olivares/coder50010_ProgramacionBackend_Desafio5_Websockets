@@ -1,0 +1,20 @@
+<h1>Esta es la Vista de realTimeProducts</h1>
+<h2> --- Lista de Productos --</h2>
+ {{#each result}}
+                <li>
+                    <div>
+                        <p>Nombre Producto: {{this.name}}</p>
+                        <p>Id:  {{this.id}}</p>
+                        <p>Precio: $ {{this.price}}</p>
+                        <p>Categoría: {{this.category}}</p>
+                        <p>Código: {{this.code}}</p>                        
+                        <p>Stock: {{this.stock}}</p>                                              
+                    </div>
+                    
+                </li>
+<hr>
+ {{/each}}
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+
+
